@@ -4,8 +4,7 @@ import subprocess
 
 
 root = r"C:\Users\vvn20206205\Desktop\github"
-workspace = glob.glob(os.path.join(
-    root, "**/*.code-workspace"), recursive=True)
+workspace = glob.glob(os.path.join(root, "**/*.code-workspace"), recursive=True)
 
 
 def shutdown_computer():
@@ -23,4 +22,10 @@ for i in workspace:
     subprocess.run(["git", "push"])
 
 
+shutdown_computer()
+
+# shutdown_computer()
+# shutdown_computer()
+# shutdown_computer()
+# shutdown_computer()
 # shutdown_computer()
