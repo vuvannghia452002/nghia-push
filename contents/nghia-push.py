@@ -3,7 +3,9 @@ import glob
 import subprocess
 
 
-root = r"C:\Users\vvn20206205\Desktop\github"
+root = r"C:\Users\vvn20206205\Desktop"
+root = os.path.expanduser("~/Desktop")
+
 workspace = glob.glob(os.path.join(root, "**/*.code-workspace"), recursive=True)
 
 
@@ -17,15 +19,13 @@ def shutdown_computer():
 
 
 for i in workspace:
-    # print(f"🚀 {i}")
+    print(f"🚀 {i}")
     os.chdir(os.path.dirname(i))
     subprocess.run(["git", "push"])
 
 
-shutdown_computer()
+# shutdown_computer()
 
-# shutdown_computer()
-# shutdown_computer()
-# shutdown_computer()
-# shutdown_computer()
-# shutdown_computer()
+
+# Thêm màu phân biệt ko có????
+# đa luồng  ?? 5 phút
