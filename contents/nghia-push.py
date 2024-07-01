@@ -4,6 +4,7 @@ import subprocess
 
 
 root = r"C:\Users\vvn20206205\Desktop"
+Desktop = os.path.expanduser("~/Desktop")
 root = os.path.expanduser("~/Desktop")
 
 workspace = glob.glob(os.path.join(root, "**/*.code-workspace"), recursive=True)
